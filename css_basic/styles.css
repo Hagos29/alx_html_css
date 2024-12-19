@@ -1,1 +1,35 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  header ul li a {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  h1 {
+    color: #ffc107;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+  }
+  article {
+    flex: 2;
+    overflow-y: auto;
+  }
+  aside {
+    flex: 1;
+    overflow-y: auto;
+  }
+  

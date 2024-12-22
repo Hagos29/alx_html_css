@@ -26,7 +26,7 @@ Follow these steps to set up the project locally:
 1.Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/Hagos29/alx_html_css.git
 
 2.Navigate to the project directory:
 bash

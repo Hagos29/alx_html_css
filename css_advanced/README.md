@@ -1,4 +1,4 @@
-Website Project README
+Get Schooled Website Project README
 Overview
 Welcome to the Get Schooled project! This is a simple, responsive website built using modern web technologies. The website is designed to provide [brief description of the website's purpose, such as "an online portfolio," "an e-commerce platform," "a personal blog," etc.].
 

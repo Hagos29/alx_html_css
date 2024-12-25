@@ -1,0 +1,286 @@
+/* body*/
+
+body {
+  font-family: "Source Sans Pro";
+}
+header {
+  position: absolute;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 750px;
+  padding: 20px 0;
+  height: 100%;
+  
+}
+.logo {
+  display: flex;
+  width: 167.02px;
+  height: 29.46px;
+  padding-left: 40px;
+  
+ 
+}
+.links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-weight: bold;
+  width: 234px;
+  height: 15px;
+  
+  
+}
+.links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  
+  background-image: url(images/Object.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1440px;
+  height: 1093px
+}
+.schooled{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 180px;
+  left: 350px;
+}
+.schooled h1{
+  font-size: 120px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: -35px;
+}
+.feeling{
+  display: flex;
+  gap:50px;
+  color: #ffffff;
+}
+.button {
+  background-color: #c271ff;
+  border: none;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.pros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.pros h2{
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  top: 710px;
+  color: #ffffff;
+}
+.learn{
+  color: #c271ff;
+}
+.pro-card{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  position: absolute;
+  top: 830px;
+  
+}
+.card{
+  color: #ffffff;
+}
+.card h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card p{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+.tutorial{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 1440px;
+  padding: 40px 0;
+  background-color: #c271ff;
+  color: #ffffff;
+
+}
+.weather{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+
+.weather blockquote{
+  font-size: 16px;
+}
+.popular{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sup-popular{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+  
+  
+}
+
+
+.sub-popular h3{
+font-size: 16px;
+font-weight: bold;
+}
+.sub-popular p{
+  color: #07162980;
+}
+.popular h2{
+  font-weight: 300;
+  font-size: 32px;
+}
+.popular span{
+  color: #c271ff;
+  font-weight: 700;
+}
+.play{
+  position: absolute;
+   top: 1520px;
+   
+}
+.avatar{
+  width: 30px;
+  height: 30px;
+}
+.avatar-card{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar-card h4{
+  color: #c271ff;
+}
+.star{
+  display: flex;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  }
+  .rating p{
+    color: #c271ff;
+  }
+  .checked{
+    color: #c271ff;
+  }
+.membership{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: #071629;
+
+}
+.membership h2{
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+}
+.membership span{
+  color: #c271ff;
+}
+.sup-membership{
+  display: flex;
+  flex-direction: row;
+}
+.sub-membership img{
+width: 43.67px;
+height: 35.35px;
+}
+.sub-membership h3,p{
+  color: #ffffff;
+}
+.sub-membership h3{
+  font-size: 18px;
+  font-weight: bold;
+}
+.sub-membership p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.membership .button{
+  margin-bottom: 40px;
+  align-items: center;
+}
+.faq{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.article{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.article h3{
+  font-size: 19px;
+  font-weight: bold;
+}
+.article .p{
+  color: gray;
+}
+
+footer{
+  background-color: #071629;
+}
+.footer-logo{
+  width: 169px;
+  height: 30px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brand{
+  display: flex;
+  flex-direction: row;
+  gap: 700px;
+  padding: 20px;
+}
+.footer p{
+  font-size: 12px;
+  font-weight: 400;
+  color:grey;
+}

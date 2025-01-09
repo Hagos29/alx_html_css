@@ -1,15 +1,11 @@
-
-  /** Variables **/
-  
-  :root {
-    --color-white: #fff;
-    --color-red: #FF6565;
-    --font-small: 12px;
-    --font-medium: 16px;
-    --font-large: 32px;
-    --font: 'Source Sans Pro', 'Lato', sans-serif;
-  }
-
+:root {
+  --color-white: #fff;
+  --color-red: #FF6565;
+  --font-small: 12px;
+  --font-medium: 16px;
+  --font-large: 32px;
+  --font: 'Source Sans Pro', 'Lato', sans-serif;
+}
   
   header {
     width: 100%;
@@ -136,66 +132,39 @@ a:hover{
     top: 0;
   }
 
-/** Media Query desktop version **/
-
-@media only screen and (max-width: 600px) {
-  nav a{
-    background-color: #FF6565;
-  }
-  .header .menu-icon{
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header .menu-icon .navicon{
-     background: #ffffff;
-     display: block;
-     height: 2px;
-     position: relative;
-     transition: background .2s ease-out;
-     width: 18px;     
-  }
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after{
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%; 
-  }
-  .header .menu-icon .navicon:before{
-    top: 5px;
-  }
-  .header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-  .header .menu-btn{
-    display: none;
-  }
-  .header.menu-btn:checked ~ .menu{
-    max-height: 240px;
-  }
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
+/** What we do section **/
+main p{
+  text-align: center;
+  width: 75%;
+  margin: 32px auto;
+  line-height: 1.5;
+  font-size: var(--font-medium);
+  font-family: var(--font);
 }
+main .container {
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+main .icons{
+  width: 100%;
+  display: grid;
+  font-family: var(--font);
+  text-align: center;
+  margin: 62px 0;
+  grid-template-columns: 25% 25% 25% 25%;
+  
+}
+main .icons .icon{
+  margin: 8px 0;
+}
+
+
+.holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+  color: var(--color-red);
+  font-size: 86px;
+}
+
+
 
 
 

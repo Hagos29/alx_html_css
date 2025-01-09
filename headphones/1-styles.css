@@ -136,14 +136,10 @@ a:hover{
 main p{
   text-align: center;
   width: 75%;
-  margin: 32px auto;
+  margin: 12px auto;
   line-height: 1.5;
   font-size: var(--font-medium);
   font-family: var(--font);
-}
-main .container {
-  padding: 4rem;
-  flex-wrap: wrap;
 }
 main .icons{
   width: 100%;
@@ -154,10 +150,6 @@ main .icons{
   grid-template-columns: 25% 25% 25% 25%;
   
 }
-main .icons .icon{
-  margin: 8px 0;
-}
-
 
 .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
   color: var(--color-red);

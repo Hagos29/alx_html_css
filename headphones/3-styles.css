@@ -1,0 +1,262 @@
+:root {
+    --color-white: #fff;
+    --color-red: #FF6565;
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: 32px;
+    --font: 'Source Sans Pro', 'Lato', sans-serif;
+  }
+    
+    header {
+      width: 100%;
+      background-image: url("images/headphones_hero_1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      color:white ;
+      
+  
+    }
+    
+  .header{
+      width: 1000px;
+      margin: auto;
+      position: relative;
+  }
+  .header nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-content: space-between;
+  }
+  .logo{
+      width: 161px;
+      height: 32px;
+      margin: 25px;
+  }
+  .header ul{
+      display: flex
+  }
+  .header li{
+      list-style: none;
+      margin: auto 18px;
+  }
+  .header a{
+      color: #ffffff;
+      text-decoration: none;
+  }
+  a:hover{
+      color: #FF6565;
+  }
+  
+  .content{
+      margin: 240px;
+  
+  }
+  .content p{
+      text-align: center;
+  }
+  .button{
+      margin:40px;
+      position: relative;
+      left: 250px;
+      color: #ffffff;
+      background-color: #FF6565;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      transition: opacity 0.2s ease;
+      
+      
+  }
+  .button:hover, .button:active {
+      opacity: 0.9;
+    }
+  
+    .header .menu-icon{
+      cursor: pointer;
+      display: inline-block;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+    }
+    
+    .header .menu-icon .navicon{
+       background: #ffffff;
+       display: block;
+       height: 2px;
+       position: relative;
+       transition: background .2s ease-out;
+       width: 18px;     
+    }
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after{
+      background: #ffffff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%; 
+    }
+    .header .menu-icon .navicon:before{
+      top: 5px;
+    }
+    .header .menu-icon .navicon:after {
+      top: -5px;
+    }
+    
+    /* menu btn */
+    .header .menu-btn{
+      display: none;
+    }
+    .header.menu-btn:checked ~ .menu{
+      max-height: 240px;
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+  
+  /** What we do section **/
+  main p{
+    text-align: center;
+    width: 75%;
+    margin: 12px auto;
+    line-height: 1.5;
+    font-size: var(--font-medium);
+    font-family: var(--font);
+  }
+  main .icons{
+    width: 100%;
+    display: grid;
+    font-family: var(--font);
+    text-align: center;
+    margin: 62px 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+  }
+  
+  .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+    color: var(--color-red);
+    font-size: 86px;
+  }
+/* Our result Section*/
+#result{
+    
+    background-image: url("images/headphones_hero_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white ;
+    padding: 200px;
+}
+  #result .icons .icon{
+    height: 10rem;
+    padding: 0;
+    position: relative;
+    background-image: url(images/pentagone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  
+  #result .icons .icon h2{
+    position: relative;
+    top: 15%;
+   font-size: var(--font-large);
+  }
+  #result .icons .icon p{
+   position: relative;
+   top: 12%;
+   font-size: var(--font-small);
+  }
+ /* .section-title {
+    width: 100%;
+    margin: auto;
+    font-family: var(--font);
+    font-size: var(--font-large);
+    font-weight: bold;
+    text-align: center;
+  }
+    */
+    /** Media Queries**/
+
+  @media (max-width: 480px) {
+    #results {
+      background-position: 50%;
+    }
+  }
+
+  #formContact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    
+  }
+  
+  input {
+    width: 50%;
+    margin: 1rem 0;
+    height: 2rem;
+    color: black;
+    font-family: var(--font);
+    font-size: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(7, 22, 41, 0.17);
+  }
+
+  input::placeholder {
+    color: black;
+    font-size: var(--font-medium);
+    font-weight: bold;
+  }
+
+  input:focus {
+    outline: none;
+  }
+  .button1{
+    margin:40px;
+    
+    position: relative;
+    left: 10px;
+    color: #ffffff;
+    background-color: #FF6565;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    
+    
+}
+.button:hover, .button:active {
+    opacity: 0.9;
+  }
+  @media (max-width: 480px) {
+    input {
+      width: 90%;
+    }
+  }

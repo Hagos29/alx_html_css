@@ -243,40 +243,174 @@ a:hover, a:active {
 
  
 }
-
-/** What we do section **/
-main p{
-  text-align: center;
-  width: 75%;
-  margin: 12px auto;
-  line-height: 1.5;
-  font-size: var(--font-medium);
-  font-family: var(--font);
-}
-main .icons{
-  width: 100%;
-  display: grid;
-  font-family: var(--font);
-  text-align: center;
-  margin: 62px 0;
-  grid-template-columns: 25% 25% 25% 25%;
   
+  /** What we do section **/
+  main p{
+    text-align: center;
+    width: 75%;
+    margin: 12px auto;
+    line-height: 1.5;
+    font-size: var(--font-medium);
+    font-family: var(--font);
+  }
+  main .icons{
+    width: 100%;
+    display: grid;
+    font-family: var(--font);
+    text-align: center;
+    margin: 62px 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+  }
+  
+  .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+    color: var(--color-red);
+    font-size: 86px;
+  }
+/* Our result Section*/
+#result{
+    
+    background-image: url("images/headphones_hero_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white ;
+    padding: 200px;
 }
+  #result .icons .icon{
+    height: 10rem;
+    padding: 0;
+    position: relative;
+    background-image: url(images/pentagone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  
+  #result .icons .icon h2{
+    position: relative;
+    top: 15%;
+   font-size: var(--font-large);
+  }
+  #result .icons .icon p{
+   position: relative;
+   top: 12%;
+   font-size: var(--font-small);
+  }
+ .section-title {
+    width: 100%;
+    margin: auto;
+    font-family: var(--font);
+    font-size: var(--font-large);
+    font-weight: bold;
+    text-align: center;
+  }
+    
+    /** Media Queries**/
 
-.holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
-  color: var(--color-red);
-  font-size: 86px;
+  @media (max-width: 480px) {
+    #results {
+      background-position: 50%;
+    }
+  }
+
+  #formContact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    
+  }
+  .section-title {
+    width: 100%;
+    margin: auto;
+    font-family: var(--font);
+    font-size: var(--font-large);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  input {
+    width: 50%;
+    margin: 1rem 0;
+    height: 2rem;
+    color: black;
+    font-family: var(--font);
+    font-size: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(7, 22, 41, 0.17);
+  }
+
+  input::placeholder {
+    color: gray;
+    font-size: var(--font-medium);
+    font-weight: bold;
+  }
+
+  input:focus {
+    outline: none;
+  }
+  .button1{
+    margin:40px;
+    
+    position: relative;
+    left: 10px;
+    color: #ffffff;
+    background-color: #FF6565;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    
+    
 }
-.section-title {
-  width: 100%;
-  margin: auto;
-  font-family: var(--font);
-  font-size: var(--font-large);
-  font-weight: bold;
-  text-align: center;
-}
+.button:hover, .button:active {
+    opacity: 0.9;
+  }
+  footer {
+    background: #071629;
+    color: white;
+  }
+  
+  footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .container {
+    padding: 4rem 4rem 3rem 4rem;
+    flex-wrap: wrap;
+  }
 
-
-
-
-
+  footer p {
+    font-size: var(--font-small);
+    font-family: var(--font);
+    margin: 3rem auto 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0.35;
+  }
+  
+  .footer-nav {
+    display: inline-flex;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bolder;
+    font-family: var(--font);
+    list-style-type: none;
+    font-size: var(--font-large);
+  
+  }
+  
+  .footer-nav li {
+    margin: 0 0.5rem;
+  }

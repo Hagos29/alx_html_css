@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="2-styles.css" />
+    <link rel="stylesheet" href="4-styles.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="../Demo/style.css" />
     <title>Headphones</title>
@@ -44,7 +44,7 @@
     <main>
       <section id="what-we-do">
         <div class="container">
-          <h1 class="section-title">What we do...</h1>
+            <h1 class="section-title">What we do...</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam qui,
             aliquid illo veniam asperiores laborum distinctio culpa sapiente
@@ -84,7 +84,7 @@
       </section>
       <section id="result">
         <div class="container">
-          <h1 class="section-title">Our results speak for themselves</h1>
+            <h1 class="section-title">Our results speak for themselves</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
             repellat animi neque reprehenderit sed facere deleniti,
@@ -94,7 +94,7 @@
             architecto dignissimos ipsam facere. Porro ut impedit adipisci non
             facilis quod eius voluptatem alias!
           </p>
-          <div class="icons">
+          <div id="spin" class="icons">
             <div class="icon">
               <h2>+2%</h2>
               <p>Lorem ipsum dolor.</p>
@@ -114,7 +114,38 @@
           </div>
         </div>
       </section>
+      <section>
+        <div id="contact">
+            <div class="container">
+              <h1 class="section-title">Contact us</h1>
+              <form action="#" method="POST" id="formContact">
+                <label for="name" class="input-label"></label>
+                <input type="text" name="Name" id="name" placeholder="Name">
+                <label for="email" class="input-label"></label>
+                <input type="email" name="Email" id="email" placeholder="Email">
+                <label for="message" class="input-label"></label>
+                <input type="text" name="Message" id="message" placeholder="Message">
+                <button class="button1">Call to Action</button>
+             </form>
+              
+            </div>
+          </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <nav>
+              <img src="images/logo_headphones.png" alt="Headphones Logo"
+                class="logo">
+              <ul class="footer-nav">
+                <li><a href="#"><span class="holberton_school-icon-ic_facebook" style="color: #ffffff;"></span></a></li>
+                <li><a href="#"><span class="holberton_school-icon-ic_twitter" style="color: #ffffff;"></span></a></li>
+                <li><a href="#"><span class="holberton_school-icon-ic_instagram" style="color: #ffffff;"></span></a></li>
+              </ul>
+            </nav>
+              <p>&#169;headphones 2020</p>
+          </div>
+    </footer>
   </body>
 </html>

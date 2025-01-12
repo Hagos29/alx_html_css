@@ -274,6 +274,24 @@ a:hover, a:active {
     font-weight: bold;
     text-align: center;
   }
+  @media (max-width: 580px) {
+    main .container {
+      padding: 4rem 2.5rem;
+    }
+    main p {
+      width: 100%;
+    }
+    main .icons {
+      grid-template-columns: 100%;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+  
+    main .icons .icon p {
+      width: 70%;
+      margin: auto;
+    }
+  
+  }
 /* Our result Section*/
 #result{
     
@@ -303,4 +321,9 @@ a:hover, a:active {
    position: relative;
    top: 12%;
    font-size: var(--font-small);
+  }
+  @media (max-width: 580px) {
+    #results {
+      background-position: 50%;
+    }
   }
